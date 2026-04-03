@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Todo sobre los sistemas de logros y trofeos en videojuegos: historia, plataformas y los más difíciles de conseguir." />
+  <title>Achievement Unlocked — Logros &amp; Trofeos en Videojuegos</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- SKIP LINK -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- =============================================
+       NAVBAR
+  ============================================= -->
+  <header>
+    <nav class="navbar-custom" role="navigation" aria-label="Navegación principal">
+      <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+
+        <a href="#" class="navbar-brand-text text-decoration-none" aria-label="Inicio — Achievement Unlocked">
+          🏆 ACHIEVEMENT<span style="color:var(--accent-2)">UNLOCKED</span>
+        </a>
+
+        <!-- Links -->
+        <ul class="nav gap-1 list-unstyled mb-0 d-none d-md-flex">
+          <li><a href="#historia"    class="nav-link-custom">Historia</a></li>
+          <li><a href="#plataformas" class="nav-link-custom">Plataformas</a></li>
+          <li><a href="#psicologia"  class="nav-link-custom">Psicología</a></li>
+          <li><a href="#dificiles"   class="nav-link-custom">Los Más Difíciles</a></li>
+        </ul>
+
+        <!-- Dark/Light toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo claro/oscuro">
+          <i class="bi bi-moon-stars-fill" id="themeIcon" aria-hidden="true"></i>
+          <span id="themeLabel">Modo Claro</span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- =============================================
+       MAIN CONTENT
+  ============================================= -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow">🎮 Meta-objetivos · Completismo · Cultura Gamer</p>
+        <h1 class="hero-title" id="hero-title">
+          El Arte de los<br/>
+          <span class="accent-word">Logros &amp; Trofeos</span><br/>
+          en Videojuegos
+        </h1>
+        <p class="hero-description">
+          Desde las primeras recompensas secretas de los años 80 hasta los sistemas globales que hoy definen cómo jugamos,
+          exploramos la historia, la psicología y los retos más brutales del mundo del Achievement Hunting.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#historia" class="btn-hero">
+            <i class="bi bi-clock-history" aria-hidden="true"></i> Ver Historia
+          </a>
+          <a href="#dificiles" class="btn-hero-outline">
+            <i class="bi bi-trophy" aria-hidden="true"></i> Los Más Difíciles
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <div class="stats-strip" role="region" aria-label="Estadísticas de logros en videojuegos">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number">2005</div>
+              <div class="stat-label">Año de inicio</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number">+2M</div>
+              <div class="stat-label">Logros en Steam</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number">+300K</div>
+              <div class="stat-label">Trofeos en PSN</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number">0.1%</div>
+              <div class="stat-label">Poseen los más raros</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================
+         HISTORIA SECTION
+    ============================================= -->
+    <section class="section-wrapper" id="historia" aria-labelledby="historia-title">
+      <div class="container">
+        <h2 class="section-title" id="historia-title">Historia de los Logros</h2>
+        <p class="text-secondary mb-5" style="max-width:680px; line-height:1.8;">
+          Los sistemas de logros y trofeos no surgieron de la nada en 2005. Hay décadas de antecedentes
+          que formaron la base de lo que hoy es un estándar de la industria.
+        </p>
+
+        <ol class="timeline" aria-label="Línea de tiempo de los logros en videojuegos">
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-label="Década de 1980">80s</div>
+            <article class="timeline-card">
+              <span class="tag">Primeros Pasos</span>
+              <h3>Parches físicos de Activision (1982)</h3>
+              <p>
+                Activision fue pionera en el concepto de recompensas externas a los juegos. Los jugadores
+                que lograban una puntuación determinada podían enviar una foto de su TV a la empresa y
+                recibir un parche físico por correo. Fue la semilla de todo lo que vendría después.
+                En consolas como la Amiga, el juego <em>E-Motion</em> ya otorgaba "bonos secretos" digitales
+                por ejecutar movimientos perfectos.
+              </p>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-label="Año 1996">1996</div>
+            <article class="timeline-card">
+              <span class="tag">Red Social</span>
+              <h3>MSN Gaming Zone — Badges en línea</h3>
+              <p>
+                Microsoft lanzó MSN Gaming Zone en 1996, permitiendo a los usuarios mostrar
+                "insignias" ganadas en juegos casuales como ajedrez y backgammon. Fue el primer
+                sistema social online de reconocimiento por logros, disponible para millones de usuarios.
+              </p>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-label="Año 2005">2005</div>
+            <article class="timeline-card">
+              <span class="tag">El Gran Salto</span>
+              <h3>Xbox 360 Gamerscore — El estándar nació</h3>
+              <p>
+                El 22 de noviembre de 2005, Microsoft lanzó el Xbox 360 con el sistema de
+                Gamerscore: el primer sistema multiplataforma de logros universales.
+                Cada juego ofrecía hasta 1.000 "G" repartidos en múltiples logros.
+                Aaron Greenberg, gerente de producto de Xbox Live, reconoció estar sorprendido
+                por la recepción masiva de la comunidad gamer.
+              </p>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-label="Año 2007">2007</div>
+            <article class="timeline-card">
+              <span class="tag">PC Gaming</span>
+              <h3>Steam Achievements — Valve se suma</h3>
+              <p>
+                Valve integró su propio sistema de logros en Steam en 2007. <em>The Orange Box</em>
+                fue la primera entrega con más de 50 logros al lanzamiento (con 99 en total),
+                cambiando las expectativas de la industria. Hoy Steam cuenta con más de 2 millones
+                de logros en su catálogo.
+              </p>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-label="Año 2008">2008</div>
+            <article class="timeline-card">
+              <span class="tag">PlayStation</span>
+              <h3>PlayStation Trophies — Sony responde</h3>
+              <p>
+                En julio de 2008, casi dos años después del lanzamiento del PS3, Sony introdujo
+                los Trofeos. El sistema añadió una capa extra: la distinción por rareza (Bronce,
+                Plata, Oro y Platino). El Trofeo de Platino, otorgado por completar todos los
+                trofeos de un juego, se convirtió en el símbolo máximo del completismo en PlayStation.
+              </p>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-label="Año 2010">2010</div>
+            <article class="timeline-card">
+              <span class="tag">Móvil</span>
+              <h3>Apple Game Center y Google Play Games</h3>
+              <p>
+                Apple lanzó Game Center en 2010, llevando el sistema de logros a iOS.
+                Android siguió con Google Play Games. El Achievement Hunting ya no era
+                exclusivo de consolas: se volvió ubicuo en todos los dispositivos.
+              </p>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-label="Año 2012">2012</div>
+            <article class="timeline-card">
+              <span class="tag">Retro Gaming</span>
+              <h3>RetroAchievements — Volver al pasado</h3>
+              <p>
+                En 2012 nació RetroAchievements, una plataforma que añade logros retroactivamente
+                a juegos de sistemas clásicos mediante emulación en plataformas como RetroArch.
+                Los usuarios de la comunidad crean indicadores que se activan al alcanzar ciertos
+                valores en la ROM emulada, democratizando el completismo en el catálogo retro.
+              </p>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-label="Año 2015">2015</div>
+            <article class="timeline-card">
+              <span class="tag">Hito</span>
+              <h3>100.000 logros en Xbox</h3>
+              <p>
+                En 2015, el catálogo de Xbox superó los 100.000 logros registrados —un hito que
+                refleja la escala industrial del sistema. La comunidad de Achievement Hunters ya
+                contaba con plataformas dedicadas como TrueAchievements y PSNProfiles con
+                foros activos para prácticamente cada juego.
+              </p>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- =============================================
+         PLATAFORMAS SECTION
+    ============================================= -->
+    <section class="section-wrapper" id="plataformas" aria-labelledby="plataformas-title">
+      <div class="container">
+        <h2 class="section-title" id="plataformas-title">Plataformas &amp; Sistemas</h2>
+        <p class="text-secondary mb-5" style="max-width:680px; line-height:1.8;">
+          Cada ecosistema tiene su propia filosofía sobre cómo recompensar a los jugadores.
+          Aquí un vistazo comparativo a los grandes sistemas vigentes.
+        </p>
+
+        <div class="platform-grid">
+
+          <article class="platform-card" style="--platform-color: #52b043;">
+            <span class="platform-icon" aria-hidden="true">🟢</span>
+            <h3>Xbox Gamerscore</h3>
+            <p>
+              El pionero. Sistema numérico universal: cada juego ofrece hasta 1.000 G
+              (o más con DLCs). El 100% significa completar todos los logros del juego y su contenido descargable.
+              Una de las comunidades de completismo más exigentes del mundo.
+            </p>
+            <span class="platform-year">DESDE 2005 · XBOX 360 / ONE / SERIES X|S</span>
+          </article>
+
+          <article class="platform-card" style="--platform-color: #003791;">
+            <span class="platform-icon" aria-hidden="true">🔵</span>
+            <h3>PlayStation Trophies</h3>
+            <p>
+              Sistema por rareza: Bronce, Plata, Oro y el codiciado <strong>Platino</strong>,
+              otorgado al completar todos los trofeos de un juego. En PS5, obtener un Platino
+              activa una animación especial que hace que el logro se sienta aún más épico.
+            </p>
+            <span class="platform-year">DESDE JULIO 2008 · PS3 / PS4 / PS5 / VITA</span>
+          </article>
+
+          <article class="platform-card" style="--platform-color: #1b2838;">
+            <span class="platform-icon" aria-hidden="true">🖥️</span>
+            <h3>Steam Achievements</h3>
+            <p>
+              El mayor catálogo del mundo con más de 2 millones de logros. Incluye estadísticas
+              de rareza globales. Algunos logros son bromas de los propios desarrolladores,
+              como el mítico "Portal — 9-Irony" de BioShock 2.
+            </p>
+            <span class="platform-year">DESDE 2007 · PC</span>
+          </article>
+
+          <article class="platform-card" style="--platform-color: #e60012;">
+            <span class="platform-icon" aria-hidden="true">🔴</span>
+            <h3>Nintendo (Individual)</h3>
+            <p>
+              Nintendo nunca adoptó un sistema de logros a nivel de plataforma, aunque
+              algunos juegos como <em>Smash Bros.</em> o <em>Mario Party</em> incluyen sus
+              propios desafíos internos. Una decisión que sigue generando debate en la comunidad.
+            </p>
+            <span class="platform-year">SIN SISTEMA GLOBAL · POR JUEGO</span>
+          </article>
+
+          <article class="platform-card" style="--platform-color: #ff6d00;">
+            <span class="platform-icon" aria-hidden="true">📱</span>
+            <h3>Móvil (Game Center / Google Play)</h3>
+            <p>
+              Apple Game Center (2010) y Google Play Games llevaron los logros al bolsillo de todos.
+              Aunque su profundidad varía enormemente, sentaron las bases del Achievement Hunting
+              fuera de las consolas tradicionales.
+            </p>
+            <span class="platform-year">DESDE 2010 · iOS / ANDROID</span>
+          </article>
+
+          <article class="platform-card" style="--platform-color: #4fd1c5;">
+            <span class="platform-icon" aria-hidden="true">🕹️</span>
+            <h3>RetroAchievements</h3>
+            <p>
+              Plataforma comunitaria que añade logros retroactivamente a juegos de NES, SNES,
+              Mega Drive, PS1 y más, mediante emulación. Permite revivir clásicos con el
+              desafío moderno del completismo.
+            </p>
+            <span class="platform-year">DESDE 2012 · EMULADORES</span>
+          </article>
+
+        </div>
+
+        <!-- Comparison table -->
+        <div class="mt-5">
+          <h3 class="h5 mb-3" style="font-family:'Orbitron',monospace; color:var(--accent);">Comparativa Rápida</h3>
+          <div class="table-responsive">
+            <table class="table table-sm" style="color:var(--text-secondary); border-color:var(--border-color);">
+              <thead style="color:var(--text-primary); border-color:var(--border-color);">
+                <tr>
+                  <th scope="col">Plataforma</th>
+                  <th scope="col">Unidad</th>
+                  <th scope="col">Rareza</th>
+                  <th scope="col">Recompensa especial</th>
+                  <th scope="col">Completismo total</th>
+                </tr>
+              </thead>
+              <tbody style="border-color:var(--border-color);">
+                <tr>
+                  <td>Xbox</td><td>Gamerscore (G)</td><td>❌</td><td>Animación "Rare"</td><td>100% de G + todos DLC</td>
+                </tr>
+                <tr>
+                  <td>PlayStation</td><td>Bronze / Silver / Gold</td><td>✅</td><td>🏆 Platinum Trophy</td><td>Platino + 100% DLC</td>
+                </tr>
+                <tr>
+                  <td>Steam</td><td>Puntos de perfil</td><td>% global</td><td>—</td><td>100% de logros del juego</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         PSICOLOGÍA SECTION
+    ============================================= -->
+    <section class="section-wrapper" id="psicologia" aria-labelledby="psicologia-title">
+      <div class="container">
+        <h2 class="section-title" id="psicologia-title">¿Por qué nos enganchan?</h2>
+        <p class="text-secondary mb-5" style="max-width:700px; line-height:1.8;">
+          Microsoft no pretendía reconfigurar la psicología humana cuando lanzó los logros casi
+          como un añadido. Pero el "Plink!" del Xbox 360 desencadenó un bucle de recompensa
+          social tan compulsivo que estudios de comportamiento llevan años intentando catalogar.
+        </p>
+
+        <div class="psych-grid">
+          <article class="psych-card">
+            <span class="icon-large" aria-hidden="true">🧠</span>
+            <h4>Refuerzo Variable</h4>
+            <p>
+              Los logros funcionan como el mecanismo de refuerzo variable estudiado por
+              Skinner: no sabes cuándo llegará la recompensa, lo que hace que la búsqueda
+              sea más adictiva que un pago predecible.
+            </p>
+          </article>
+          <article class="psych-card">
+            <span class="icon-large" aria-hidden="true">👥</span>
+            <h4>Validación Social</h4>
+            <p>
+              El Gamerscore es público. Tus amigos ven tus logros. Esa visibilidad social
+              activa los mismos mecanismos de estatus que motivan la competencia en entornos
+              físicos y profesionales.
+            </p>
+          </article>
+          <article class="psych-card">
+            <span class="icon-large" aria-hidden="true">✅</span>
+            <h4>Completismo</h4>
+            <p>
+              El instinto de "completar la colección" es poderoso. Los platinos y el 100%
+              de Gamerscore activan la necesidad cognitiva de cerrar ciclos abiertos,
+              conocida como efecto Zeigarnik.
+            </p>
+          </article>
+          <article class="psych-card">
+            <span class="icon-large" aria-hidden="true">🔍</span>
+            <h4>Exploración Guiada</h4>
+            <p>
+              Los diseñadores inteligentes usan los logros como herramientas narrativas:
+              para enseñar mecánicas, revelar secretos o hasta contar chistes. Valve
+              dominó esto ya en 2007.
+            </p>
+          </article>
+          <article class="psych-card">
+            <span class="icon-large" aria-hidden="true">⏳</span>
+            <h4>Extensión de Longevidad</h4>
+            <p>
+              Los logros alargan la vida útil de un juego. Jugadores que ya terminaron
+              la historia vuelven semanas después para cazar el último trofeo elusive,
+              aumentando el retorno de inversión del título.
+            </p>
+          </article>
+          <article class="psych-card">
+            <span class="icon-large" aria-hidden="true">🎭</span>
+            <h4>Identidad Gamer</h4>
+            <p>
+              El perfil de logros se convierte en una identidad digital. El Gamertag,
+              el nivel de PSN, el showcase de Steam: son currículums lúdicos que hablan
+              de quién eres como jugador.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         LOS MÁS DIFÍCILES SECTION
+    ============================================= -->
+    <section class="section-wrapper" id="dificiles" aria-labelledby="dificiles-title">
+      <div class="container">
+        <h2 class="section-title" id="dificiles-title">Los Logros Más Difíciles de la Historia</h2>
+        <p class="text-secondary mb-5" style="max-width:720px; line-height:1.8;">
+          Existen logros y trofeos tan brutales que menos del 1% de quienes juegan el título
+          los ha conseguido. Son la cúspide del Achievement Hunting: pruebas de habilidad,
+          paciencia, resistencia física y, a veces, de pura locura.
+        </p>
+
+        <div class="achievement-list" role="list">
+
+          <!-- #1 -->
+          <article class="achievement-article" role="listitem" aria-labelledby="ach-1-title">
+            <div class="achievement-rank" aria-label="Puesto 1">#1</div>
+            <div class="achievement-body">
+              <h3 id="ach-1-title">Mein Leben</h3>
+              <span class="game-name">Wolfenstein II: The New Colossus (2017)</span>
+              <p>
+                Considerado por muchos el logro más brutal de la historia moderna. Debes completar
+                el juego completo en dificultad Mein Leben —permadeath total— sin ningún punto de guardado.
+                Un solo error y vuelves al inicio. Un FPS de acción frenética donde cada tiroteo
+                puede terminar en un reinicio de horas de partida.
+              </p>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="rarity-badge badge-plat"><i class="bi bi-trophy-fill" aria-hidden="true"></i> Platino</span>
+                <span class="rarity-badge" style="background:rgba(224,96,96,.15); color:var(--accent-3);">
+                  <i class="bi bi-people" aria-hidden="true"></i> &lt;0.5% jugadores
+                </span>
+              </div>
+            </div>
+            <div class="achievement-meta">
+              <span class="rarity-badge badge-plat">INFERNAL</span>
+              <div class="difficulty-bar" aria-hidden="true">
+                <div class="difficulty-fill" style="width:99%"></div>
+              </div>
+              <div class="difficulty-label">Dificultad 99/100</div>
+            </div>
+          </article>
+
+          <!-- #2 -->
+          <article class="achievement-article" role="listitem" aria-labelledby="ach-2-title">
+            <div class="achievement-rank" aria-label="Puesto 2">#2</div>
+            <div class="achievement-body">
+              <h3 id="ach-2-title">The Shadows Rushed Me</h3>
+              <span class="game-name">Max Payne 3 (2012)</span>
+              <p>
+                Completa el modo New York Minute Hardcore: el juego entero en una sola sesión,
+                sin morir y contra un contador de tiempo implacable. Fallar en cualquier punto
+                obliga a reiniciar desde el principio. Considerado uno de los desafíos de habilidad
+                más exigentes en un shooter en tercera persona.
+              </p>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="rarity-badge badge-gold"><i class="bi bi-trophy-fill" aria-hidden="true"></i> Oro</span>
+                <span class="rarity-badge" style="background:rgba(224,96,96,.15); color:var(--accent-3);">
+                  <i class="bi bi-people" aria-hidden="true"></i> &lt;1% jugadores
+                </span>
+              </div>
+            </div>
+            <div class="achievement-meta">
+              <span class="rarity-badge badge-plat">EXTREMO</span>
+              <div class="difficulty-bar" aria-hidden="true">
+                <div class="difficulty-fill" style="width:95%"></div>
+              </div>
+              <div class="difficulty-label">Dificultad 95/100</div>
+            </div>
+          </article>
+
+          <!-- #3 -->
+          <article class="achievement-article" role="listitem" aria-labelledby="ach-3-title">
+            <div class="achievement-rank" aria-label="Puesto 3">#3</div>
+            <div class="achievement-body">
+              <h3 id="ach-3-title">Bladder of Steel</h3>
+              <span class="game-name">Rock Band 2 (2008)</span>
+              <p>
+                Completa las 84 canciones del Endless Setlist 2 sin pausar ni fallar ninguna.
+                Son más de 6 horas continuas de juego que incluyen canciones de Megadeth,
+                System of a Down y Metallica. El juego tiene mecanismos anti-trampa integrados.
+                El nombre del logro es una descripción literal del requisito fisiológico.
+              </p>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="rarity-badge badge-gold"><i class="bi bi-trophy-fill" aria-hidden="true"></i> Oro</span>
+                <span class="rarity-badge" style="background:rgba(224,96,96,.15); color:var(--accent-3);">
+                  <i class="bi bi-people" aria-hidden="true"></i> Muy pocos completistas
+                </span>
+              </div>
+            </div>
+            <div class="achievement-meta">
+              <span class="rarity-badge badge-plat">RESISTENCIA</span>
+              <div class="difficulty-bar" aria-hidden="true">
+                <div class="difficulty-fill" style="width:90%"></div>
+              </div>
+              <div class="difficulty-label">Dificultad 90/100</div>
+            </div>
+          </article>
+
+          <!-- #4 -->
+          <article class="achievement-article" role="listitem" aria-labelledby="ach-4-title">
+            <div class="achievement-rank" aria-label="Puesto 4">#4</div>
+            <div class="achievement-body">
+              <h3 id="ach-4-title">Mr. Perfect</h3>
+              <span class="game-name">Mega Man 10 (2010)</span>
+              <p>
+                Completa el juego entero sin recibir un solo golpe. No un intento, no un nivel:
+                el juego completo. Si te impactan en cualquier momento, debes reiniciar.
+                Mega Man 10 es conocido por su diseño de niveles implacable y sus jefes brutales.
+                Es el equivalente digital de golpearse la cabeza contra una pared de manera repetida.
+              </p>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="rarity-badge badge-gold"><i class="bi bi-trophy-fill" aria-hidden="true"></i> Oro</span>
+                <span class="rarity-badge" style="background:rgba(224,96,96,.15); color:var(--accent-3);">
+                  <i class="bi bi-people" aria-hidden="true"></i> &lt;1% jugadores
+                </span>
+              </div>
+            </div>
+            <div class="achievement-meta">
+              <span class="rarity-badge" style="background:var(--accent-3); color:#fff;">MAESTRÍA</span>
+              <div class="difficulty-bar" aria-hidden="true">
+                <div class="difficulty-fill" style="width:93%"></div>
+              </div>
+              <div class="difficulty-label">Dificultad 93/100</div>
+            </div>
+          </article>
+
+          <!-- #5 -->
+          <article class="achievement-article" role="listitem" aria-labelledby="ach-5-title">
+            <div class="achievement-rank" aria-label="Puesto 5">#5</div>
+            <div class="achievement-body">
+              <h3 id="ach-5-title">Impossible Boy</h3>
+              <span class="game-name">Super Meat Boy (2010)</span>
+              <p>
+                Completa todos los niveles del juego sin morir ni una sola vez. Obtenido
+                por menos del 0.1% de los jugadores, algunos fans se preguntan si es
+                realmente alcanzable de forma legítima. Los niveles de Super Meat Boy están
+                diseñados específicamente para matar al jugador constantemente.
+              </p>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="rarity-badge badge-gold"><i class="bi bi-trophy-fill" aria-hidden="true"></i> Oro</span>
+                <span class="rarity-badge" style="background:rgba(224,96,96,.15); color:var(--accent-3);">
+                  <i class="bi bi-people" aria-hidden="true"></i> &lt;0.1% jugadores
+                </span>
+              </div>
+            </div>
+            <div class="achievement-meta">
+              <span class="rarity-badge badge-plat">LEYENDA</span>
+              <div class="difficulty-bar" aria-hidden="true">
+                <div class="difficulty-fill" style="width:98%"></div>
+              </div>
+              <div class="difficulty-label">Dificultad 98/100</div>
+            </div>
+          </article>
+
+          <!-- #6 -->
+          <article class="achievement-article" role="listitem" aria-labelledby="ach-6-title">
+            <div class="achievement-rank" aria-label="Puesto 6">#6</div>
+            <div class="achievement-body">
+              <h3 id="ach-6-title">LASO Master</h3>
+              <span class="game-name">Halo: The Master Chief Collection (2019)</span>
+              <p>
+                Completa los cuatro juegos de Halo originales en dificultad Legendaria
+                con todos los Skulls activados. Los Skulls modifican el juego: duplican la
+                vida de los enemigos, les dan más granadas, desactivan el radar y más.
+                Una prueba de habilidad y conocimiento de los juegos sin igual.
+              </p>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="rarity-badge badge-gold"><i class="bi bi-trophy-fill" aria-hidden="true"></i> Oro</span>
+                <span class="rarity-badge" style="background:rgba(224,96,96,.15); color:var(--accent-3);">
+                  <i class="bi bi-people" aria-hidden="true"></i> &lt;1% jugadores
+                </span>
+              </div>
+            </div>
+            <div class="achievement-meta">
+              <span class="rarity-badge" style="background:var(--accent-2); color:#000;">ÉPICO</span>
+              <div class="difficulty-bar" aria-hidden="true">
+                <div class="difficulty-fill" style="width:92%"></div>
+              </div>
+              <div class="difficulty-label">Dificultad 92/100</div>
+            </div>
+          </article>
+
+          <!-- #7 -->
+          <article class="achievement-article" role="listitem" aria-labelledby="ach-7-title">
+            <div class="achievement-rank" aria-label="Puesto 7">#7</div>
+            <div class="achievement-body">
+              <h3 id="ach-7-title">7 Day Survivor</h3>
+              <span class="game-name">Dead Rising (2006)</span>
+              <p>
+                Sobrevive 14 horas reales en el Modo Infinito. La salud se drena constantemente,
+                la comida no reaparece y no puedes guardar la partida. Uno de los primeros logros
+                de la era Xbox 360 en conseguir fama por su nivel de dificultad de resistencia física.
+              </p>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="rarity-badge badge-silver"><i class="bi bi-trophy-fill" aria-hidden="true"></i> Plata</span>
+                <span class="rarity-badge" style="background:rgba(224,96,96,.15); color:var(--accent-3);">
+                  <i class="bi bi-people" aria-hidden="true"></i> Pocos completistas
+                </span>
+              </div>
+            </div>
+            <div class="achievement-meta">
+              <span class="rarity-badge" style="background:var(--badge-bronze); color:#fff;">RESISTENCIA</span>
+              <div class="difficulty-bar" aria-hidden="true">
+                <div class="difficulty-fill" style="width:88%"></div>
+              </div>
+              <div class="difficulty-label">Dificultad 88/100</div>
+            </div>
+          </article>
+
+          <!-- #8 -->
+          <article class="achievement-article" role="listitem" aria-labelledby="ach-8-title">
+            <div class="achievement-rank" aria-label="Puesto 8">#8</div>
+            <div class="achievement-body">
+              <h3 id="ach-8-title">Go Outside (Super Go Outside)</h3>
+              <span class="game-name">The Stanley Parable: Ultra Deluxe (2022)</span>
+              <p>
+                El logro más extraño de esta lista: no requiere habilidad, sino paciencia radical.
+                Debes abrir el juego, cerrarlo y no volver a abrirlo durante 10 años completos.
+                El juego fue lanzado en 2022, por lo que el primer jugador legítimo podrá
+                desbloquearlo en 2032 como muy pronto.
+              </p>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="rarity-badge badge-bronze"><i class="bi bi-trophy-fill" aria-hidden="true"></i> Bronce</span>
+                <span class="rarity-badge" style="background:rgba(224,96,96,.15); color:var(--accent-3);">
+                  <i class="bi bi-people" aria-hidden="true"></i> Prácticamente 0%
+                </span>
+              </div>
+            </div>
+            <div class="achievement-meta">
+              <span class="rarity-badge badge-plat">PACIENCIA</span>
+              <div class="difficulty-bar" aria-hidden="true">
+                <div class="difficulty-fill" style="width:85%"></div>
+              </div>
+              <div class="difficulty-label">Dificultad 85/100</div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Nota fuente -->
+        <p class="mt-4 small" style="color:var(--text-muted);">
+          <i class="bi bi-info-circle" aria-hidden="true"></i>
+          Dificultades y porcentajes de jugadores basados en datos de TrueAchievements, PSNProfiles, Steam y reportes de
+          TheGamer, GameSpot, DualShockers y WatchMojo (2022–2024).
+        </p>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         TIPOS DE ACHIEVEMENT HUNTERS
+    ============================================= -->
+    <section class="section-wrapper" aria-labelledby="tipos-title">
+      <div class="container">
+        <h2 class="section-title" id="tipos-title">Tipos de Achievement Hunters</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="platform-card h-100" style="--platform-color: var(--badge-gold);">
+              <span class="platform-icon" aria-hidden="true">🏆</span>
+              <h3>El Completista</h3>
+              <p>
+                Su objetivo es el 100% o el Platino. No le importa si el camino es divertido;
+                lo que importa es cerrar el círculo. Prefiere el sistema de trofeos de PlayStation
+                por el valor simbólico del Platino.
+              </p>
+              <div class="mt-3">
+                <div class="d-flex justify-content-between mb-1 small" style="color:var(--text-muted);">
+                  <span>Dedicación</span><span>98%</span>
+                </div>
+                <div class="xp-bar-wrap"><div class="xp-bar-fill" style="width:98%"></div></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="platform-card h-100" style="--platform-color: var(--accent-2);">
+              <span class="platform-icon" aria-hidden="true">📈</span>
+              <h3>El Gamerscore Hunter</h3>
+              <p>
+                Maximiza puntos en el menor tiempo posible. A veces juega títulos mediocres
+                solo por sus logros fáciles. Se convirtió en una subcultura desde 2005
+                con carreras a los Gamerescores más altos del mundo.
+              </p>
+              <div class="mt-3">
+                <div class="d-flex justify-content-between mb-1 small" style="color:var(--text-muted);">
+                  <span>Eficiencia</span><span>95%</span>
+                </div>
+                <div class="xp-bar-wrap"><div class="xp-bar-fill" style="width:95%"></div></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="platform-card h-100" style="--platform-color: var(--accent-3);">
+              <span class="platform-icon" aria-hidden="true">🔥</span>
+              <h3>El Cazador de Rarezas</h3>
+              <p>
+                Solo le interesan los logros con menos del 1% de obtención.
+                Para él, lo que hace a un logro valioso es precisamente que casi nadie
+                más en el mundo lo tiene. El Mein Leben es su Santo Grial.
+              </p>
+              <div class="mt-3">
+                <div class="d-flex justify-content-between mb-1 small" style="color:var(--text-muted);">
+                  <span>Habilidad</span><span>99%</span>
+                </div>
+                <div class="xp-bar-wrap"><div class="xp-bar-fill" style="width:99%"></div></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <p class="footer-logo mb-2">🏆 ACHIEVEMENT UNLOCKED</p>
+          <p style="font-size:.875rem; color:var(--text-muted); line-height:1.7;">
+            Un viaje por la historia, la psicología y los retos más épicos del mundo de los logros y trofeos en videojuegos.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h6 mb-3" style="font-family:'Orbitron',monospace; color:var(--accent);">Secciones</h3>
+          <nav class="footer-links d-flex flex-column gap-2" aria-label="Navegación del pie de página">
+            <a href="#historia">Historia de los Logros</a>
+            <a href="#plataformas">Plataformas &amp; Sistemas</a>
+            <a href="#psicologia">Psicología del Completismo</a>
+            <a href="#dificiles">Los Más Difíciles</a>
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h6 mb-3" style="font-family:'Orbitron',monospace; color:var(--accent);">Fuentes</h3>
+          <nav class="footer-links d-flex flex-column gap-2" aria-label="Fuentes de información">
+            <a href="https://en.wikipedia.org/wiki/Achievement_(video_games)" target="_blank" rel="noopener noreferrer">Wikipedia — Achievement (video games)</a>
+            <a href="https://www.fastcompany.com/90786023/how-achievements-took-over-the-video-game-industry" target="_blank" rel="noopener noreferrer">Fast Company — How achievements took over</a>
+            <a href="https://www.thegamer.com/video-games-hardest-achievements-history/" target="_blank" rel="noopener noreferrer">TheGamer — Hardest Achievements in History</a>
+            <a href="https://www.gamespot.com/gallery/the-toughest-video-game-achievements/" target="_blank" rel="noopener noreferrer">GameSpot — Toughest Achievements</a>
+          </nav>
+        </div>
+      </div>
+      <p class="footer-copy text-center">
+        © 2026 Achievement Unlocked. Contenido educativo e informativo.
+        Información basada en Wikipedia, Fast Company, TheGamer, GameSpot y DualShockers.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ACHIEVEMENT TOAST -->
+  <div class="achievement-toast" id="achievementToast" role="alert" aria-live="polite" aria-atomic="true" aria-label="Logro desbloqueado">
+    <div class="toast-icon" aria-hidden="true">🏆</div>
+    <div>
+      <div class="toast-title">LOGRO DESBLOQUEADO</div>
+      <div class="toast-name">Bienvenido, Cazador</div>
+      <div class="toast-desc">Has descubierto el mundo del Achievement Hunting</div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // =============================================
+    // THEME TOGGLE
+    // =============================================
+    const html        = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon   = document.getElementById('themeIcon');
+    const themeLabel  = document.getElementById('themeLabel');
+
+    function setTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      if (theme === 'light') {
+        themeIcon.className    = 'bi bi-sun-fill';
+        themeLabel.textContent = 'Modo Oscuro';
+      } else {
+        themeIcon.className    = 'bi bi-moon-stars-fill';
+        themeLabel.textContent = 'Modo Claro';
+      }
+    }
+
+    // Cargar preferencia guardada
+    const saved = localStorage.getItem('theme') || 'dark';
+    setTheme(saved);
+
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    // =============================================
+    // ACHIEVEMENT TOAST — auto hide
+    // =============================================
+    const toast = document.getElementById('achievementToast');
+    setTimeout(() => {
+      toast.classList.add('hiding');
+      setTimeout(() => toast.remove(), 450);
+    }, 4000);
+
+    // =============================================
+    // XP BAR ANIMATION ON SCROLL
+    // =============================================
+    const xpFills = document.querySelectorAll('.xp-bar-fill');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.width = e.target.dataset.width || e.target.style.width;
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    xpFills.forEach(el => {
+      const targetW    = el.style.width;
+      el.dataset.width = targetW;
+      el.style.width   = '0';
+      obs.observe(el);
+    });
+
+    // =============================================
+    // SMOOTH ACTIVE NAV (highlight on scroll)
+    // =============================================
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link-custom');
+
+    const sectionObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => { l.style.color = ''; l.style.background = ''; });
+          const active = document.querySelector(`.nav-link-custom[href="#${e.target.id}"]`);
+          if (active) {
+            active.style.color      = 'var(--accent)';
+            active.style.background = 'rgba(240,192,64,.1)';
+          }
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    sections.forEach(s => sectionObs.observe(s));
+  </script>
+
+</body>
+</html>
